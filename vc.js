@@ -26,19 +26,19 @@ startBtn.addEventListener('click', () => {
 
 // Action commands
 const commands = {    
-    "show leaderboard": () => window.location.href = "/leaderboard",
+    "show leaderboard": () => window.location.href = "leaderboard.html",
     "reload page": () => location.reload(),
     "open new tab": () => window.open('https://www.example.com', '_blank'),
     "close this website": () => window.close(),
-    "take me to seat tutorials":() => window.location.href = '/tut.html',
-    "take me to see tutorials":() => window.location.href = '/tut.html',
-    "take me to c tutorials":() => window.location.href = '/tut.html',
-    "take me to leaderboards":() => window.location.href = '/leaderboard.html',
-    "i want to see my profile":() => window.location.href = '/profile.html',
-    "lets play some games":() => window.location.href = '/games.html',
-    "let's play some games":() => window.location.href = '/games.html',
-    "go back to home":() => window.location.href = '/index.html',
-    "go back home":() => window.location.href = '/index.html',
+    "take me to seat tutorials":() => window.location.href = 'tut.html',
+    "take me to see tutorials":() => window.location.href = 'tut.html',
+    "take me to c tutorials":() => window.location.href = 'tut.html',
+    "take me to leaderboards":() => window.location.href = 'leaderboard.html',
+    "i want to see my profile":() => window.location.href = 'profile.html',
+    "lets play some games":() => window.location.href = 'games.html',
+    "let's play some games":() => window.location.href = 'games.html',
+    "go back to home":() => window.location.href = 'index.html',
+    "go back home":() => window.location.href = 'index.html',
 
 };
 
