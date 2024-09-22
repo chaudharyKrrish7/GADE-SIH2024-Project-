@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GADE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tut.html">Practice</a></li>
+      <li><a href="leaderboard.html">Leaderboard</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </nav>
+  
+  <div class="container"><br>
+    <button id="startBtn">Start Listening</button>
+    <div id="output">Your speech will appear here...</div>
+
+    <div class="containernxt">
+        <!-- Left Panel (Modules) -->
+        <div class="left-panel">
+            <!-- <h1>Modules</h1> -->
+    
+            <div class="module active" id="module1">
+                <h2>What is C?</h2>
+                <p>
+                    C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in 1972.
+                    It is a very popular language, despite being old. The main reason for its popularity is because it is a fundamental language in the field of computer science.
+                    C is strongly associated with UNIX, as it was developed to write the UNIX operating system.
+                    <h2>Why Learn C?</h2>
+                    •	It is one of the most popular programming languages in the world.
+                    •	If you know C, you will have no problem learning other popular programming languages such as Java, Python, C++, C#, etc, as the syntax is similar.
+                    •	C is very fast, compared to other programming languages, like Java and Python
+                    •	C is very versatile; it can be used in both applications and technologies.
+                    <h2>Difference between C and C++</h2>
+                    •	C++ was developed as an extension of C, and both languages have almost the same syntax
+                    •	The main difference between C and C++ is that C++ support classes and objects, while C does not
+                    
+                    
+                    
+                    
+                    
+                    </p>
+            </div>
+    
+            <div class="module" id="module2">
+                <h2>Get Started With C</h2>
+                <p>
+                    To start using C, you need two things:
+                    •	A text editor, like Notepad, to write C code
+                    •	A compiler, like GCC, to translate the C code into a language that the computer will understand
+                    There are many text editors and compilers to choose from. In this tutorial, we will use an IDE (see below).
+                    <h2>C Install IDE</h2>
+                    An IDE (Integrated Development Environment) is used to edit AND compile the code.
+                    Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These are all free, and they can be used to both edit and debug C code.
+                    Note: Web-based IDE's can work as well, but functionality is limited.
+                    We will use Code::Blocks in our tutorial, which we believe is a good place to start.
+                    You can find the latest version of Codeblocks at http://www.codeblocks.org/. Download the mingw-setup.exe file, which will install the text editor with a compiler.
+                    <h2>C QuickStart</h2>
+                    Let's create our first C file.
+                    Open Codeblocks and go to File > New > Empty File.
+                    Write the following C code and save the file as myfirstprogram.c (File > Save File as):
+                     
+                    Don't worry if you don't understand the code above - we will discuss it in detail in later chapters. For now, focus on how to run the code.
+                    In Codeblocks, it should look like this:
+                     
+                    Then, go to Build > Build and Run to run (execute) the program. The result will look something to this:
+                     
+                    
+                    <h2>Congratulations!</h2> You have now written and executed your first C program.
+                    Learning C At Gade
+                    When learning C at Gades.com, you can use our "Try it Yourself" tool, which shows both the code and the result. It is used to write, run, and test code right in your browser: 
+                    
+                    </p>
+            </div>
+    
+            <div class="module" id="module3">
+                <h2>C Syntax</h2>
+                <p>
+
+                    <h2>Syntax</h2>
+                    You have already seen the following code a couple of times in the first chapters. Let's break it down to understand it better:
+                     
+                    <h2>Example explained</h2>
+                    Line 1: #include <stdio.h> is a header file library that lets us work with input and output functions, such as printf() (used in line 4). Header files add functionality to C programs.
+                    Line 2: A blank line. C ignores white space. But we use it to make the code more readable.
+                    Line 3: Another thing that always appear in a C program is main(). This is called a function. Any code inside its curly brackets {} will be executed.
+                    Line 4: printf() is a function used to output/print text to the screen. In our example, it will output "Hello World!".
+                    Line 5: return 0 ends the main() function.
+                    Line 6: Do not forget to add the closing curly bracket } to actually end the main function.
+                    
+                    <h2>Points To Remember</h2>
+                    •	Every C statement ends with a semicolon ;
+                    
+                    •	            The body of int main() could also been written as:
+                    int main(){printf("Hello World!");return 0;}
+                    
+                    
+                    •	 The compiler ignores white spaces. However, multiple lines makes the code more readable.
+                    <h2>C Statement
+                    Statements</h2>
+                    A computer program is a list of "instructions" to be "executed" by a computer.
+                    In a programming language, these programming instructions are called statements.
+                    The following statement "instructs" the compiler to print the text "Hello World" to the screen:
+                     
+                    It is important that you end the statement with a semicolon ;
+                    If you forget the semicolon (;), an error will occur and the program will not run:
+                     
+                    <h2>Many Statements</h2>
+                    Most C programs contain many statements.
+                    The statements are executed, one by one, in the same order as they are written:
+                     
+                    
+                    <h2>Example explained</h2>
+                    From the example above, we have three statements:
+                    1.	printf("Hello World!");
+                    2.	printf("Have a good day!");
+                    3.	return 0;
+                    The first statement is executed first (print "Hello World!" to the screen).
+                    Then the second statement is executed (print "Have a good day!" to the screen).
+                    And at last, the third statement is executed (end the C program successfully).
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    </p>
+            </div>
+    
+    
+            <button id="nextBtn">Next</button>
+        </div>
+    
+        <!-- Right Panel (Code Editor and Output) -->
+        <div class="right-panel">
+            <iframe src="https://replit.com/@chaudharykrris1/Gade1stRep?lite=true" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+<script src="vc.js"></script>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GADE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tut.html">Practice</a></li>
+      <li><a href="leaderboard.html">Leaderboard</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </nav>
+  <div class="container"><br>
+    
+    
+</div>
+<div id="mainbg1">
+  
+   <p style="color: white;">GADE : A New World Of Learning!</p>
+   <div id="sss">Our app, Voice-Controlled Gaming Tools for Enhance
+    <br>Learning, is designed to make learning coding languages
+    <br> engaging and interactive. By integrating voice recognition
+    <br> technology and game mechanics, we offer a hands-free, 
+    <br>
+    immersive experience where users can improve their
+    <br> coding skills through dynamic challenges
+  </div>
+    <br><br>
+    <button id="startBtn">Start</button>
+  
+</div>
+<br><br>
+<div class="links-container">
+  <a href="tut.html" class="link link-1">Codeeee!</a>
+  <a href="games.html" class="link link-2">Games</a>
+  <a href="profile.html" class="link link-3">Stats</a>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 GADE | About Us | Contact</p>
+  </footer>
+  <div id="output">Your speech will appear here...</div>
+
+  <script src="app.js"></script>
+  <script src="vc.js"></script>
+  <script>
+    // Add click effect to links
+    const links = document.querySelectorAll('.link');
+    
+    links.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default link behavior for demo purposes
+            link.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                link.style.transform = 'scale(1)';
+            }, 150);
+        });
+    });
+  </script>
+</body>
+</html>

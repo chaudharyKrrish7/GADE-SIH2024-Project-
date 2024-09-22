@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+    body{
+        
+        background-color: #232129;
+        font-family: "Montserrat", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    }
+    nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav .logo {
+    display: inline-block;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+    
+    .leaderboard-container {
+        margin-top: 5%;
+        margin-left: 38%;
+    color: white;
+    background-color: #151b22;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #1b1920;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rank {
+    font-weight: bold;
+}
+
+.name {
+    margin-right: 20px;
+}
+
+.score {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    color: black;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tut.html">Practice</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    <div class="leaderboard-container">
+        <h1>Leaderboard</h1>
+        <ul id="leaderboard">
+            <!-- JavaScript will dynamically insert leaderboard items here -->
+        </ul>
+    </div>
+</body>
+<script>
+    const leaderboard = [
+    { name: "Alice", score: 150 },
+    { name: "Bob", score: 200 },
+    { name: "Charlie", score: 120 },
+    { name: "David", score: 180 }
+];
+
+function renderLeaderboard() {
+    const leaderboardElement = document.getElementById('leaderboard');
+    leaderboard.sort((a, b) => b.score - a.score);
+    
+    leaderboard.forEach((player, index) => {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `
+            <span class="rank">${index + 1}.</span>
+            <span class="name">${player.name}</span>
+            <span class="score">${player.score}</span>
+        `;
+        leaderboardElement.appendChild(listItem);
+    });
+}
+
+window.onload = renderLeaderboard;
+
+</script>
+</html>

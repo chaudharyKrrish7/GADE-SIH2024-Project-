@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #game {
+    margin-top: 50px;
+  }
+  
+  #game-info {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #syntax-display {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  #syntax-input {
+    padding: 10px;
+    font-size: 1.2em;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #timer, #score, #level, #lives, #high-score {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  #game-over {
+    color: red;
+    font-size: 1.5em;
+    display: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #restart-btn {
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #restart-btn:hover {
+    background-color: #45a049;
+  }
+  
